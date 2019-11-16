@@ -5,5 +5,5 @@ var y, x,:real;
    writeln('y')
    read('x')
    read(y)
- if (sqr(x)+ sqr(y) <1) and (y<1-x) and (y>x+1)
+ if (sqr(x)+ sqr(y) <1) and (y<1-x) and (y>x+1) than
  End.
