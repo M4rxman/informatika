@@ -8,7 +8,7 @@ BEGIN
  p:=1 ;
   for k:=1 to n do
     begin 
-    p:=p*((2*k+1)*x)/(k+1) ;
+    p:=p*((2*k+1)*x-(k-1))/(k) ;
     end;
   writeln(p);
   end.
