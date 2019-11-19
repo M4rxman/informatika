@@ -1,14 +1,14 @@
 program gg;
-var p, k, s, n:real;
+var p, x:real; k, n:integer;
 BEGIN  
  writeln('n=');
  readln(n);
  writeln('x=');
  readln(x);
- p:=1
-  for k:= to n do
+ p:=1 ;
+  for k:=1 to n do
     begin 
-    p:=p*(2k-1)/2k ;
+    p:=p*(2*k-1)/(2*k) ;
     end;
   writeln(p);
   end.
