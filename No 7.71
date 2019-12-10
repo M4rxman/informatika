@@ -1,0 +1,29 @@
+program simodin;
+const m = 5;
+var A: array[1..m] of real;
+    B: array[1..m] of real;
+    C: array[1..m] of real;
+    k, i, u :integer;
+begin
+ for u:=1 to m do
+   begin
+   writeln('C[',u,']');
+   readln(C[u]);
+   end;
+ for k:=1 to m do
+   begin
+   if (C[k]<0) then 
+    begin
+    A[k]:=C[k];
+    writeln('videmni C[]=',A[k]);
+    end;
+   end;
+  for i:=1 to m do
+   begin
+   if (C[i]>0) then 
+    begin
+    B[i]:=C[i];
+    writeln('dotatniC[]=',B[i]);
+    end;
+   end;
+end.
