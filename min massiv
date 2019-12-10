@@ -1,0 +1,25 @@
+program picefoshit;
+var a: array[1..10] of real;
+ x :real;
+ k, i :integer;
+  begin
+  for k:=1 to 10 do
+   begin
+   writeln('a[',k,']');
+   readln(a[k]);
+   end;
+  for k:=1 to 9 do 
+   for i:=k+1 to 10 do 
+    if a[i]<a[k] then 
+     begin
+      x:=a[k];
+      a[k]:= a[i];
+      a[i]:=x;
+     end;
+    writeln('otsortirovanyi massiv');
+  for k:=1 to 10 do
+   begin
+   writeln('a[',k,']=',a[k]);
+   end;
+ end.
+  
