@@ -1,0 +1,32 @@
+
+program ah;
+const N=10;
+var m:array[1..N] of integer;
+  k, i, x :integer;
+begin
+for k:=1 to N do
+ begin
+ writeln('m[',k,']=');
+ read(m[k]);
+ end;
+for k:=1 to N do
+ begin
+  if (m[k] mod 3=0) then
+   begin
+   m[k]:=(m[k])*(m[k]);
+   end;
+ end;
+  for k:=1 to N-1 do 
+   for i:=k+1 to N do 
+    if m[i]<m[k] then 
+     begin
+      x:=m[k];
+      m[k]:= m[i];
+      m[i]:=x;
+     end;
+    writeln('otsortirovanyi massiv');
+  for k:=1 to N do
+   begin
+   writeln('m[',k,']=',m[k]);
+   end;
+end.
