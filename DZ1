@@ -1,0 +1,20 @@
+prog ohthat;
+N=const;
+var x,y,v,d:string[10];
+ j:integer;
+{то что в фигурных скобках, коментарий, его писать не надо, и поменяйте названия переменных}
+begin
+	y:="1234567890"
+	write(x)
+	k:=1;
+	for k to N do
+	begin
+		if(pos(x,y)>0 then
+		begin
+			v:=copy(y,k)
+			delete(x,k)
+			incert(x,v,k)
+		end;
+	end;
+	writeln(x);
+end.
