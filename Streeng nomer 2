@@ -1,0 +1,14 @@
+program sheet;
+var v,j,n:string; k,a:integer;
+begin
+k:=1;
+read(n);
+ for k:=1 to length(n) do 
+ begin
+  j:=copy(n,k,1);
+  v:=copy(n,k+1,1);
+  if pos(v,j)<>0 then
+   a:=a+1;
+ end;
+ writeln(a);
+end.
