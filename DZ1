@@ -1,7 +1,7 @@
 prog ohthat;
 N=const;
-var x,y,v,d:string[10];
- j:integer;
+var x,y,v:string[10];
+ K:integer;
 {то что в фигурных скобках, коментарий, его писать не надо, и поменяйте названия переменных}
 begin
 	y:="1234567890"
